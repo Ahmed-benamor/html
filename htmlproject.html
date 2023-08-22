@@ -1,25 +1,27 @@
 <html>
-  <head>
     <meta charset="utf-8" />
     <title>Porfolio</title>
     <link rel="icon" href="ASSET/peach.png" />
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <h1>Portfolio</h1>
+  <body id="background">
+    <h1 id="porfolio">Portfolio</h1> 
+
     <!-- balise semantique header-->
     <header>
       <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
+        <a class="nav" href="#home">Home</a>
+        <a class="nav" href="#about">About</a>  
+        <a class="nav" href="#work">Work</a>
+        <a class="nav" href="#resume">Resume</a>
+        <a class="nav" href="#contact">Contact</a>
       </nav>
+
     </header>
     <main>
       <section id="home">
-        <h2>Home</h2>
-        <iframe
+        <h2 class="title">Home</h2>
+        <iframe id="video"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/u5W2NWItytc"
@@ -30,36 +32,34 @@
         ></iframe>
       </section>
       <section id="about">
-        <h2>About</h2>
+        <h2 class="title">About</h2>
         <p>My name is Ahmed a developper Full stack JS.</p>
         <dl>
           <dt>Skills</dt>
-          <dd>React</dd>
-          <dd><strong>Html</strong></dd>
-          <dd><b>CSS</b></dd>
-          <dd><b>JavaScript</b></dd>
+          <dd class="h"><b>react</b></dd>
+          <dd class="h"><strong>Html</strong></dd>
+          <dd class="h"><b>CSS</b></dd>
+          <dd class="h"><b>JavaScript</b></dd>
         </dl>
-
-        <img src="ASSET/peach.png" alt="" width="30%" height="50%" />
       </section>
       <section id="work">
-        <h2>Work</h2>
+        <h2 class="title">Work</h2>
         <table border="1">
           <tr>
-            <th>Html</th>
-            <th>css</th>
-            <th>javascript</th>
+            <th class="table">Html</th>
+            <th class="table">css</th>
+            <th class="table">javascript</th>
           </tr>
           <tr>
-            <td>div</td>
-            <td>selector</td>
-            <td>function</td>
+            <td class="col">div</td>
+            <td class="col">selector</td>
+            <td class="col">function</td>
           </tr>
         </table>
       </section>
       <section id="resume">
-        <h2>Resume</h2>
-        <p>
+        <h2 class="home">Resume</h2>
+        <p class="zzz">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quibusdam
           laudantium tempora nesciunt! Asperiores sunt laborum voluptatibus
           ducimus minima ab incidunt molestias? Repellat debitis in dolores nam
@@ -67,18 +67,18 @@
         </p>
       </section>
       <section id="contact">
-        <h2>Contact</h2>
+        <h2 class="home">Contact</h2>
         <form>
-          <label>Name</label>
-          <input type="text" placeholder="entrer votre nom" />
-          <label>Email</label>
-          <input type="email" placeholder="entrer votre email" />
-          <label>Name</label>
+          <label>Name</label> <br>  
+          <input id="nom" type="text" placeholder="entrer votre nom" /><br>
+          <label>Email</label><br>
+          <input id="mail" type="email" placeholder="entrer votre email" /><br>
+          <label>Name</label><br>
           <input
             type="password"
             placeholder="entrer votre password"
           /><br /><br />
-          <button>Envoyer</button>
+          <button id="btn">Envoyer</button>
         </form>
       </section>
     </main>
@@ -86,5 +86,6 @@
       @2023
       <a href="#top">Take me up</a>
     </footer>
+    </script>
   </body>
 </html>
